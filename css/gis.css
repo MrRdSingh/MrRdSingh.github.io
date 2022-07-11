@@ -1,0 +1,106 @@
+body{
+	overflow:hidden;
+}
+#map_container{
+      position: fixed;
+      z-index: 90;
+      margin: 1vh 0 0 0;
+      width: 100vw;
+      height: 85vh;
+    }
+.sidebar{
+      z-index: 100;
+      position: absolute;
+      left: 0;
+      margin: 1vh 0 0 0 ;
+      padding-top: 2vh;
+      width: 0;
+      height: 85vh;
+      overflow-x: hidden;
+      color: black;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white; background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+.sidebar .closebtn {
+      position: absolute;
+      right: 2vw;
+      top: 2.5vh;
+      font-size: 30px;
+      margin: 8px 0 0 50px;
+      color: #000;
+  }
+.sidebar .closebtn:hover{
+      text-decoration: none;
+      color: #808080;
+}
+.pagefooter{
+		/*
+		bottom: 0px;
+		width: 100%;
+		position: fixed;
+		background-color: #3A5894;
+		color: white;
+		font-family: Verdana;
+		font-size: 10px;
+      */
+	  position:fixed;
+      width: 100%;
+      background-color: yellow;
+      bottom: 0;
+
+      text-align: center;
+      font-size: 10px;
+      font-family: sans-serif;
+    }
+.pagefooter a{
+  text-decoration: none;
+  color: black;
+}
+.leaflet-touch .leaflet-control-layers-toggle{
+    width: 36px;
+    height: 36px;
+
+}
+.leaflet-control-layers-toggle{
+  background-image: url(../images/globe.jpg);
+  background-size: 46px 46px;
+  background-repeat: no-repeat;
+  /*background-size: 20px 20px;*/
+}
+
+/*change size of layer control button*/
+.leaflet-touch .leaflet-control-layers-toggle{
+  width: 50px;
+  height: 50px;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

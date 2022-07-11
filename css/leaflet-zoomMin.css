@@ -1,0 +1,16 @@
+.leaflet-control-zoom-reset {
+  text-indent: -999em;
+  background: #fff url("../images/home-active.png") no-repeat scroll center center;
+  background-size: 12px 12px;
+}
+.leaflet-control-zoom-reset:focus {
+  outline: 0;
+}
+.leaflet-control-zoom-reset.leaflet-disabled {
+  background-image: url("../images/home-inactive.png");
+}
+.leaflet-control-zoom{
+  position: absolute;
+  right: 0;
+  top: 23vh;
+}
